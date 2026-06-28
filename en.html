@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghost in the Shell Recreated</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&family=Noto+Sans+JP:wght@400;700&family=Libre+Barcode+128&family=Syncopate:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+</head>
+
+<body>
+
+    <!-- шапка сайта    -->
+    <header class="headbar">
+
+        <!-- логотип    -->
+        <a href=# class=logo>
+            <img src="images/logo_30th.png" alt="logo">
+        </a>
+
+        <!-- переключатель языка и меню    -->
+        <div class="headbuttons">
+
+            <!-- переключатель языка    -->
+            <div class="language_switcher">
+                <ul>
+                    <li><a href="index.html" class="lang_button">JP</a></li>
+                    <li>/</li>
+                    <li><a href="en.html" class="lang_button active">EN</a></li>
+                </ul>
+            </div>
+
+            <!-- триггер меню    -->
+            <div class="menu">
+                <a href="#" class="menu_trigger">
+                    <svg width="24" height="16">
+
+                        <line x1="7.28" y1="0" x2="1.6" y2="16.8" stroke="white" stroke-width="2.4" />
+                        <line x1="13.2" y1="4" x2="8.8" y2="16.8" stroke="white" stroke-width="2.4" />
+                        <line x1="18.8" y1="8" x2="16" y2="16.8" stroke="white" stroke-width="2.4" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- обложка -->
+    <div class="cover">
+        <img class="covermain" src="images/main.jpg">
+        <img class="headcover" src="images/parts1.png">
+        <img class="lights1" src="images/01.png">
+        <img class="lights2" src="images/02.png">
+        <img class="lights3" src="images/03.png">
+        <img class="lights4" src="images/04.png">
+        <img class="lights5" src="images/05.png">
+        <div class="title">
+            <img class="ghost" src="images/glitch_frame_ghost.png" alt="title1">
+            <img class="inthe" src="images/glitch_frame_inthe.png" alt="title2">
+            <img class="shell" src="images/glitch_frame_shell.png" alt="title3">
+        </div>
+        <div class="minititle">
+            <svg width="20" height="32">
+                <line x1="0" y1="2" x2="19" y2="2" stroke="white" stroke-width="5" />
+            </svg>
+            <img class="worldof" src="images/worldof.png">
+            <img class="shirow" src="images/shirow.png">
+            <img class="masamune" src="images/masamune.png">
+        </div>
+        <div class="smogs">
+            <img class="smog1" src="images/smog01.png">
+            <img class="smog2" src="images/smog02.png">
+            <img class="smog3" src="images/smog03.png">
+            <img class="smog4" src="images/smog04.png">
+        </div>
+    </div>
+
+    <!-- раздел новостей -->
+    <section class="news">
+
+        <div class="caruselblock">
+
+            <div class="headofcarusel">
+                <div class="htitle">
+                    <h2>NEWS__</h2>
+                </div>
+
+                <div class="caruselbuttons">
+                    <div class="caruselscrollbuttons">
+                        <ul>
+                            <li>
+                                <a class="buttoncaruselprev">
+                                    <img src="images/swiper_arrow_prev.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="buttoncaruselnext">
+                                    <img src="images/swiper_arrow_next.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="caruselcategories">
+                        <a>
+                            <img src="images/ico_news_article.svg">
+                        </a>
+                        <span class="caruselall">all</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caruselfeed">
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/yokoku_4.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.25</span>
+                            <span>MEDIA</span>
+                        </div>
+                        <p>
+                            Pre-Broadcast Hype Show “THE GHOST IN THE SHELL: Pre-Broadcast Top-Secret Cyber-Special” and
+                            Mini-Program “Ghost PR Squad” Confirmed to Air!
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/annecy_1.png">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.25</span>
+                            <span>EVENT</span>
+                        </div>
+                        <p>
+                            Official Report & Photos Released: “THE GHOST IN THE SHELL” at Annecy Film Festival’s
+                            “SPECIAL EVENTS”
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/gits-fliers26-4.png">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.24</span>
+                            <span>EVENT</span>
+                        </div>
+                        <p>
+                            THE GHOST IN THE SHELL (2026) – New Episode Premiere, Panel & 1995 Screening
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/tgits_amzn_merch_ogp-B.png">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.24</span>
+                            <span>OTHER</span>
+                        </div>
+                        <p>
+                            “GHOST IN THE SHELL” Official Apparel & Merchandise Launch! Exclusive Amazon Merch on Demand
+                            designs are now available on Amazon prior to the broadcast
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/HLNJedBbAAAYYbq.jpeg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.20</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            Streaming on Prime Video Japan Starts July 7, 2026! Prime Video Trailer Revealed!
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/2606GATS_release01.png">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2026.06.19</span>
+                            <span>EVENT</span>
+                        </div>
+                        <p>
+                            “The Ghost in the Shell Exhibition” Kansai Tour: New Merchandise Revealed!
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+            </div>
+
+            <div>
+                <svg class="progressbar">
+                    <line class="progressone" x1="2" y1="2" x2="1270"></line>
+                    <line class="progresstwo" x1="2" y1="2" x2="175" y2="2"></line>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- раздел основных ссылок -->
+    <section class="links">
+        <div class="linktable">
+            <div class="firstlink">
+                <img src="images/TGITS_banner_1160x240.jpg">
+            </div>
+            <div class="secondlink">
+                <img src="images/image-1-1.png">
+            </div>
+            <div class="lastlink">
+                <img src="images/youtube_banner-2.jpg">
+            </div>
+        </div>
+
+    </section>
+
+    <!-- раздел групп 
+    <section class="series">
+        <div class="htitle">
+            <h2>SERIES__</h2>
+        </div>
+
+        <div class="seriesrow">
+            <div class="oneofseries">
+                <h3>ORIGINAL COMIC</h3>
+                <h4>攻殻機動隊 THE GHOST IN THE SHELL（原作漫画）</h4>
+                <img src="images/img01.jpg" width="300px">
+            </div>
+            <div class="oneofseries">
+                <h3>GHOST IN THE SHELL / INNOCENCE</h3>
+                <h4>GHOST IN THE SHELL / 攻殻機動隊 ／ イノセンス</h4>
+                <img src="images/img02.jpg" width="300px">
+            </div>
+            <div class="oneofseries">
+                <h3>STAND ALONE COMPLEX</h3>
+                <h4>攻殻機動隊 STAND ALONE COMPLEX</h4>
+                <img src="images/img03.jpg" width="300px">
+            </div>
+            <div class="oneofseries">
+                <h3>ARISE</h3>
+                <h4>攻殻機動隊ARISE</h4>
+                <img src="images/img04.jpg" width="300px">
+            </div>
+            <div class="oneofseries">
+                <h3>GHOST IN THE SHELL: SAC_2045</h3>
+                <h4>攻殻機動隊 SAC_2045</h4>
+                <img src="images/img05.jpg" width="300px">
+            </div>
+            <div class="oneofseries">
+                <h3>THE GHOST IN THE SHELL</h3>
+                <h4>攻殻機動隊 THE GHOST IN THE SHELL </h4>
+                <img src="images/img06.jpg" width="300px">
+            </div>
+        </div>
+    </section>-->
+
+    <!-- раздел особенного-->
+    <section class="features">
+
+        <div class="caruselblock">
+
+            <div class="headofcarusel">
+                <div class="htitle">
+                    <h2>FEATURES__</h2>
+                </div>
+
+                <div class="caruselbuttons">
+                    <div class="caruselscrollbuttons">
+                        <ul>
+                            <li>
+                                <a class="buttoncaruselprev">
+                                    <img src="images/swiper_arrow_prev.svg">
+                                </a>
+                            </li>
+                            <li>
+                                <a class="buttoncaruselnext">
+                                    <img src="images/swiper_arrow_next.svg">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="caruselcategories">
+                        <a>
+                            <img src="images/ico_news_article.svg">
+                        </a>
+                        <span class="caruselall">all</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="caruselfeed">
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/okiura_GITS17.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.05.08</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Struggles With Ghost in the Shell, As Encountered by Hiroyuki Okiura -An Animator’s
+                            Struggles and Joys- #02
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/okiura_GITS18.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.08.04</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Struggles With Ghost in the Shell, As Encountered by Hiroyuki Okiura -An Animator’s
+                            Struggles and Joys- #01
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/okiura_GITS14.png">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.08.04</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Struggles With Ghost in the Shell, As Encountered by Hiroyuki Okiura -An Animator’s
+                            Struggles and Joys- #03
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/JIBUNGAINAI.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.07.25</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Keigo Oyamada’s Three Years Expressing a Cyberbrain Society in Music -Synergies Between
+                            Ghost in the Shell and Cornelius- #03
+                        </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/GITS-ARISE-MV.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.07.25</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Keigo Oyamada’s Three Years Expressing a Cyberbrain Society in Music -Synergies Between
+                            Ghost in the Shell and Cornelius- #01 </p>
+                    </figcaption>
+
+                </figure>
+
+                <figure class="card">
+
+                    <div class="cardframe">
+                        <div class="cardframein">
+                            <img src="images/CORNELIUS-scaled.jpg">
+                        </div>
+                        <div class="squaretopright"></div>
+                        <div class="squaretopleft"></div>
+                        <div class="squarebottom"></div>
+                    </div>
+
+                    <figcaption class="cardcaption">
+                        <div class="cardtopcaption">
+                            <span>2025.07.25</span>
+                            <span>Interview</span>
+                        </div>
+                        <p>
+                            Keigo Oyamada’s Three Years Expressing a Cyberbrain Society in Music -Synergies Between
+                            Ghost in the Shell and Cornelius- #02
+                        </p>
+                    </figcaption>
+
+                </figure>
+            </div>
+
+            <div>
+                <svg class="progressbar">
+                    <line class="progressone" x1="2" y1="2" x2="1270"></line>
+                    <line class="progresstwo" x1="2" y1="2" x2="175" y2="2"></line>
+                </svg>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- раздел галерея -->
+    <section class="gallery">
+        <div class="caruselblock">
+            <div class="headofcarusel">
+                <div class="htitle">
+                    <h2>MOVIE GALLERY__</h2>
+                </div>
+                <div class="caruselbuttons">
+                    <div class="caruselscrollbuttons">
+                        <div class="caruselcategories">
+                            <a>
+                                <img src="images/ico_news_article.svg">
+                            </a>
+                            <span class="caruselall">all</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="videochoose">
+                <div class="video">
+                    <iframe src="https://www.youtube.com/embed/2OGEOg3bbIc?si=GJ-wbDVOXFB9ADxf"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="choose">
+                    <div class="lineblack">
+                        <svg>
+                            <line class="blackline" x1="1" y1="0" x2="1" y2="100%"></line>
+                        </svg>
+                    </div>
+                    <svg class="linechoose">
+                        <line class="chooseline" x1="1" y1="2" x2="100%" y2="2"></line>
+                    </svg>
+                    <div class="choosecaption">
+                        <div class="choosetopcaption">
+                            <span>6/11/2026</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            ”THE GHOST IN THE SHELL” TV Anime | Official Trailer #4 | Premiering July 2026
+                        </p>
+                    </div>
+                    <svg class="linechoose">
+                        <line class="chooseline" x1="1" y1="2" x2="100%" y2="2"></line>
+                    </svg>
+                    <div class="choosecaption">
+                        <div class="choosetopcaption">
+                            <span>5/11/2026</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            ”THE GHOST IN THE SHELL” TV Anime | Official Trailer #3 | Premiering July 2026
+                        </p>
+                    </div>
+                    <svg class="linechoose">
+                        <line class="chooseline" x1="1" y1="2" x2="100%" y2="2"></line>
+                    </svg>
+                    <div class="choosecaption">
+                        <div class="choosetopcaption">
+                            <span>3/28/2026</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            ”THE GHOST IN THE SHELL” TV Anime | Official Trailer #2 | Premiering July 2026
+                        </p>
+                    </div>
+                    <svg class="linechoose">
+                        <line class="chooseline" x1="1" y1="2" x2="100%" y2="2"></line>
+                    </svg>
+                    <div class="choosecaption">
+                        <div class="choosetopcaption">
+                            <span>4/14/2025</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            TV Animation “THE GHOST IN THE SHELL” 2nd Teaser Trailer｜Scheduled for 2026
+                        </p>
+                    </div>
+                    <svg class="linechoose">
+                        <line class="chooseline" x1="1" y1="2" x2="100%" y2="2"></line>
+                    </svg>
+                    <div class="choosecaption">
+                        <div class="choosetopcaption">
+                            <span>4/7/2025</span>
+                            <span>ANIME</span>
+                        </div>
+                        <p>
+                            ‘The Exhibition of The World of Shirow Masamune -“The Ghost in the Shell” and The Path of
+                            Creation-‘ | Official Trailer
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>
