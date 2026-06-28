@@ -1,67 +1,68 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
+    padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: rgb(17, 17, 17);
     min-height: 3000px;
-    padding: 0;
 }
 
 /* верхняя панель */
-.headbar { 
+.headbar {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    box-sizing: border-box;
-    height: auto;
-    padding: 35.5px 35.5px;
+    padding: 35.5px;
     display: flex;
     justify-content: space-between;
-    align-items: top;
+    align-items: flex-start;
     z-index: 1000;
 }
 
-.logo img{ 
+.logo img {
     position: relative;
     display: block;
     height: 10.5vh;
     width: auto;
 }
 
-.headbuttons { 
+.headbuttons {
     position: relative;
     display: flex;
     gap: 35px;
-    padding-top: 13px;
-    padding-right: 7.5px;
+    padding: 13px 7.5px 0 0;
     height: 5vh;
 }
 
-.language_switcher ul { 
+.language_switcher ul {
     position: relative;
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 5px 0 0 0;
     display: flex;
     gap: 8px;
     align-items: center;
     font-size: 1.1vh;
     color: rgb(129, 129, 129);
-    padding-top: 5px;
 }
 
-.lang_button { 
+.lang_button {
     color: rgb(129, 129, 129);
     text-decoration: none;
 }
 
-.lang_button.active { 
+.lang_button.active {
     color: rgb(255, 255, 255);
 }
 
-
 /* постер */
-.cover { 
+.cover {
     position: relative;
     width: 100%;
     display: inline-block;
@@ -75,91 +76,88 @@ body {
     z-index: 1;
 }
 
-.headcover {
+/* Лампы и наложение постера */
+.headcover,
+.lights1,
+.lights2,
+.lights3,
+.lights4,
+.lights5 {
     position: absolute;
-    top: 0%;
+    top: 0;
     width: 100%;
     z-index: 3;
 }
 
-
-/* Лампы */
-.lights1 {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    z-index: 3;
+.lights1,
+.lights5 {
     animation: 3s blinkfirst infinite;
 }
 
 .lights2 {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    z-index: 3;
     animation: 3s blinksecond infinite;
 }
 
 .lights3 {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    z-index: 3;
     animation: 3s blinkfirstfast infinite;
 }
 
 .lights4 {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    z-index: 3;
     animation: 3s blinksecondfast infinite;
 }
 
-.lights5 {
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    z-index: 3;
-    animation: 3s blinkfirst infinite;
-}
-
 @keyframes blinkfirst {
-    0%, 35%, 100% {
-        opacity: 0%;
+
+    0%,
+    35%,
+    100% {
+        opacity: 0;
     }
-    10%  {
-        opacity: 100%;
+
+    10% {
+        opacity: 1;
     }
 }
 
 @keyframes blinkfirstfast {
-    0%, 50%, 87%, 100% {
-        opacity: 0%;
+
+    0%,
+    50%,
+    87%,
+    100% {
+        opacity: 0;
     }
-    67%  {
-        opacity: 100%;
+
+    67% {
+        opacity: 1;
     }
 }
 
 @keyframes blinksecond {
-    20%, 80%{
-        opacity: 0%;    
+
+    20%,
+    80% {
+        opacity: 0;
     }
+
     90% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
 
 @keyframes blinksecondfast {
-    0%, 40%, 75%, 100%{
-        opacity: 0%;    
+
+    0%,
+    40%,
+    75%,
+    100% {
+        opacity: 0;
     }
+
     50% {
-        opacity: 100%;
+        opacity: 1;
     }
 }
-
 
 /* Надпись ghost in the shell */
 .title {
@@ -191,7 +189,7 @@ body {
 
 .shell {
     position: relative;
-    left: -14%
+    left: -14%;
 }
 
 .minititle {
@@ -202,7 +200,6 @@ body {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 16%;
 }
 
@@ -220,136 +217,137 @@ body {
     margin-bottom: 13%;
 }
 
-
 /* Дым */
 .smogs {
     position: absolute;
-    z-index: 4;            
+    z-index: 4;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;          
-    pointer-events: none;  
+    height: 100%;
+    pointer-events: none;
+}
 
+.smog1,
+.smog2,
+.smog3,
+.smog4 {
+    position: absolute;
+    height: auto;
 }
 
 .smog1 {
-    position: absolute;    
-    bottom: -2%;          
-    left: -29%;            
-    width: 73%;            
-    height: auto;          
-    transform: rotate(42deg);   
-    animation: 7s smoganim infinite;      
+    bottom: -2%;
+    left: -29%;
+    width: 73%;
+    transform: rotate(42deg);
+    animation: 7s smoganim infinite;
 }
 
 .smog2 {
-    position: absolute;    
-    bottom: 35%;          
-    left: -10.5%;            
-    width: 50%;            
-    height: auto;                
-    animation: 5s smoganim2 infinite;      
+    bottom: 35%;
+    left: -10.5%;
+    width: 50%;
+    animation: 5s smoganim2 infinite;
 }
 
 .smog3 {
-    position: absolute;  
     top: 38%;
     left: 20%;
-    width: 120%;            
-    height: auto;           
-    animation: 10s smoganim3 infinite;      
+    width: 120%;
+    animation: 10s smoganim3 infinite;
 }
 
 .smog4 {
-    position: absolute;  
     top: 53%;
     left: 13%;
-    width: 120%;            
-    height: auto;             
-    animation: 8s smoganim4 infinite;      
+    width: 120%;
+    animation: 8s smoganim2 infinite;
 }
 
 @keyframes smoganim {
-    0%, 100% {
-        opacity: 50%;
+
+    0%,
+    100% {
+        opacity: 0.5;
     }
-    50%  {
-        opacity: 100%;
+
+    50% {
+        opacity: 1;
     }
 }
 
 @keyframes smoganim2 {
-    0%, 100% {
-        opacity: 10%;
+
+    0%,
+    100% {
+        opacity: 0.1;
     }
-    50%  {
-        opacity: 35%;
+
+    50% {
+        opacity: 0.35;
     }
 }
 
 @keyframes smoganim3 {
-    0%, 100% {
-        opacity: 15%;
+
+    0%,
+    100% {
+        opacity: 0.15;
     }
-    50%  {
-        opacity: 35%;
+
+    50% {
+        opacity: 0.35;
     }
 }
 
-@keyframes smoganim4 {
-    0%, 100% {
-        opacity: 10%;
-    }
-    50%  {
-        opacity: 35%;
-    }
-}
-
-
-/* Новости */
-.news {
+/* общий контейнер для всех разделов */
+.container {
     position: relative;
     width: 100%;
-    padding: 92px 27px;
-    overflow: hidden;
-    height: 550px;
-}
-
-.caruselblock {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    box-sizing: border-box;
     max-width: 1270px;
+    margin: 0 auto;
+    padding: 0 27px;
 }
 
+
+
+/* все разделы */
+.news,
+.features,
+.links,
+.series,
+.gallery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 92px;
+}
+
+
+
+/* карусель */
 .headofcarusel {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-right: 90px;
-    gap: 350px
+    margin-right: 40px;
 }
 
+/* заголовок карусели */
 .htitle {
     position: relative;
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
     color: white;
 }
 
 .htitle h2 {
-    font-family: "Syncopate",sans-serif;
+    font-family: "Syncopate", sans-serif;
     font-size: 24pt;
     font-weight: 500;
     letter-spacing: -0.1px;
 }
 
+/* кнопки карусели */
 .caruselbuttons {
-    position: relative;
     display: flex;
     align-items: center;
     gap: 70px;
@@ -361,8 +359,6 @@ body {
     font-size: 0;
     display: flex;
     list-style: none;
-    margin: 0;
-    padding: 0;
     gap: 45px;
 }
 
@@ -377,7 +373,7 @@ body {
 
 .caruselcategories img {
     width: 55%;
-    transform: translate(0px, 4px);
+    transform: translateY(4px);
 }
 
 .caruselall {
@@ -385,37 +381,40 @@ body {
     font-size: 8pt;
     font-weight: 700;
     writing-mode: vertical-lr;
-    transform: translate(-10px);
+    transform: translateX(-10px);
     letter-spacing: 2px;
 }
 
+/* лента карусели */
 .caruselfeed {
+    padding-top: 10px;
     display: flex;
     justify-content: flex-start;
-    gap: 20px;
+    gap: 40px;
     overflow-x: visible;
 }
 
 .card {
     margin: 0;
-    color: white;
-    font-family: sans-serif;
     flex-shrink: 0;
     width: 270px;
+}
+
+/* Декоративные рамки карточек карусели*/
+.cardframe,
+.cardframein {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
 }
 
 .cardframe {
     position: relative;
     background-color: #666;
     padding: 1px;
-    margin-bottom: 20px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
 }
 
 .cardframein {
     background-color: rgb(17, 17, 17);
     padding: 5px;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
 }
 
 .cardframein img {
@@ -426,38 +425,31 @@ body {
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
 }
 
-.squaretopright {
-    border: none;
-    border-top: 1px solid rgb(174, 174, 174);
-    border-right: 1px solid rgb(174, 174, 174);
+.squaretopright,
+.squaretopleft,
+.squarebottom {
     position: absolute;
     width: 5px;
     height: 5px;
-    z-index: 10;
+}
+
+.squaretopright {
+    border-top: 1px solid rgb(174, 174, 174);
+    border-right: 1px solid rgb(174, 174, 174);
     top: 0;
     right: 0;
 }
 
 .squaretopleft {
-    border: none;
     border-top: 1px solid rgb(174, 174, 174);
     border-left: 1px solid rgb(174, 174, 174);
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    z-index: 10;
     top: 0;
     left: 0;
 }
 
 .squarebottom {
-    border: none;
     border-bottom: 1px solid rgb(174, 174, 174);
     border-left: 1px solid rgb(174, 174, 174);
-    position: absolute;
-    width: 5px;
-    height: 5px;
-    z-index: 10;
     bottom: 0;
     left: 0;
 }
@@ -467,91 +459,56 @@ body {
     justify-content: space-between;
     color: #888;
     font-size: 9px;
-    margin-bottom: 15px;
+    margin: 15px 0px;
 }
 
 .cardcaption {
+    color: white;
     font-size: 11px;
-    font-weight: normal;
     line-height: 1.7;
     letter-spacing: 1px;
-    margin: 0;
 }
 
+
+/* полоса прокрутки карусели */
 .progressbar {
-    width: 1200px;
     height: 10px;
-    padding: 100px 0px;
+    margin-top: 70px;
+}
+
+.progressone,
+.progresstwo {
+    stroke-width: 2.4;
 }
 
 .progressone {
     stroke: #666;
-    stroke-width: 2.4;
 }
 
 .progresstwo {
-        stroke: white;
-    stroke-width: 2.4;
+    stroke: white;
 }
 
-/* ссылки */
-.links {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 20px;
-}
 
+
+/* раздел серий */
+
+
+
+/* раздел ссылок */
 .linktable {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    width: 100%;
-    max-width: 1270px;
+    gap: 40px;
 }
 
 .linktable img {
     width: 100%;
-    max-width: 600px;
-    height: auto;
-    display: block;
-}
-
-/* группы 
-.series {
-    width: 100%;
-    padding: 130px 27px;
-    overflow: hidden;
-}
-
-.seriesrow {
-    display: grid;
-}
-
-.oneofseries {
-    display: flex;
-}*/
-
-
-/* Особое */
-.features {
-    width: 100%;
-    padding: 0px 27px;
-    overflow: hidden;
 }
 
 
-/* Галерея */
-.gallery {
-    width: 100%;
-    padding: 0px 27px;
-    overflow: hidden;
-}
 
+/* раздел галереи */
 .videochoose {
     display: flex;
     height: 500px;
@@ -563,7 +520,7 @@ body {
     display: block;
 }
 
-.video iframe{
+.video iframe {
     width: 100%;
     aspect-ratio: 16 / 9;
 }
@@ -599,7 +556,7 @@ body {
     font-weight: normal;
     line-height: 1.7;
     letter-spacing: 1px;
-    margin: 10px 0px 0px 50px;
+    margin: 10px 0 0 50px;
     color: white;
 }
 
