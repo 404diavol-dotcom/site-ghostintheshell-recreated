@@ -553,6 +553,7 @@ body {
 /* раздел галереи */
 .videochoose {
     display: flex;
+    padding-top: 35px;
 }
 
 .video {
@@ -562,6 +563,7 @@ body {
 
 .video iframe {
     width: 100%;
+    height: 350px;
     aspect-ratio: 16 / 9;
 }
 
@@ -599,6 +601,7 @@ body {
     letter-spacing: 1px;
     margin: 10px 0 0 50px;
     color: white;
+    padding: 5px 0px 10px 0;
 }
 
 .lineblack {
@@ -619,4 +622,31 @@ body {
 .blackline {
     stroke: rgb(17, 17, 17);
     stroke-width: 25;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 10;
+}
+
+.arrowsvg {
+    stroke-width: 1.7px;
+    stroke: rgb(174, 174, 174);
+    fill: none;
+}
+
+.mmatext {
+    margin-top: 240px;
+}
+
+.mmatext p {
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 100px;
+}
+
+.mmaimg {
+    margin: 100px 0px;
 }
