@@ -1,0 +1,238 @@
+.cover {
+    position: relative;
+    width: 100%;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.covermain {
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 1;
+}
+
+/* Лампы и наложение постера */
+.headcover,
+.lights1,
+.lights2,
+.lights3,
+.lights4,
+.lights5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+.lights1,
+.lights5 {
+    animation: 3s blinkfirst infinite;
+}
+
+.lights2 {
+    animation: 3s blinksecond infinite;
+}
+
+.lights3 {
+    animation: 3s blinkfirstfast infinite;
+}
+
+.lights4 {
+    animation: 3s blinksecondfast infinite;
+}
+
+@keyframes blinkfirst {
+
+    0%,
+    35%,
+    100% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkfirstfast {
+
+    0%,
+    50%,
+    87%,
+    100% {
+        opacity: 0;
+    }
+
+    67% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinksecond {
+
+    20%,
+    80% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinksecondfast {
+
+    0%,
+    40%,
+    75%,
+    100% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+/* Надпись ghost in the shell */
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -63%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title img {
+    position: relative;
+    width: 63.3%;
+    margin-bottom: 26.5%;
+}
+
+.ghost {
+    position: relative;
+    left: -29.5%;
+}
+
+.inthe {
+    position: relative;
+    right: -59%;
+}
+
+.shell {
+    position: relative;
+    left: -14%;
+}
+
+.minititle {
+    position: absolute;
+    top: 69.2%;
+    left: 74.5%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    width: 16%;
+}
+
+.minititle img {
+    position: relative;
+}
+
+.worldof {
+    position: relative;
+    margin-bottom: 25%;
+}
+
+.shirow {
+    position: relative;
+    margin-bottom: 13%;
+}
+
+/* Дым */
+.smogs {
+    position: absolute;
+    z-index: 4;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.smog1,
+.smog2,
+.smog3,
+.smog4 {
+    position: absolute;
+    height: auto;
+}
+
+.smog1 {
+    bottom: -2%;
+    left: -29%;
+    width: 73%;
+    transform: rotate(42deg);
+    animation: 7s smoganim infinite;
+}
+
+.smog2 {
+    bottom: 35%;
+    left: -10.5%;
+    width: 50%;
+    animation: 5s smoganim2 infinite;
+}
+
+.smog3 {
+    top: 38%;
+    left: 20%;
+    width: 120%;
+    animation: 10s smoganim3 infinite;
+}
+
+.smog4 {
+    top: 53%;
+    left: 13%;
+    width: 120%;
+    animation: 8s smoganim2 infinite;
+}
+
+@keyframes smoganim {
+
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes smoganim2 {
+
+    0%,
+    100% {
+        opacity: 0.1;
+    }
+
+    50% {
+        opacity: 0.35;
+    }
+}
+
+@keyframes smoganim3 {
+
+    0%,
+    100% {
+        opacity: 0.15;
+    }
+
+    50% {
+        opacity: 0.35;
+    }
+}

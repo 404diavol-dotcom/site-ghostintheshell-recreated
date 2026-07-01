@@ -1,3 +1,10 @@
+@import "style/stylecover.css";
+/* постер */
+@import "style/stylenews.css";
+/* новости */
+@import "style/stylegallery.css";
+/* раздел галереи */
+
 *,
 *::before,
 *::after {
@@ -10,6 +17,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: rgb(17, 17, 17);
     min-height: 3000px;
+    overflow-x: hidden;
 }
 
 /* верхняя панель */
@@ -23,293 +31,54 @@ body {
     justify-content: space-between;
     align-items: flex-start;
     z-index: 1000;
-}
 
-.logo img {
-    position: relative;
-    display: block;
-    height: 10.5vh;
-    width: auto;
-}
-
-.headbuttons {
-    position: relative;
-    display: flex;
-    gap: 35px;
-    padding: 13px 7.5px 0 0;
-    height: 5vh;
-}
-
-.language_switcher ul {
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 5px 0 0 0;
-    display: flex;
-    gap: 8px;
-    align-items: center;
-    font-size: 1.1vh;
-    color: rgb(129, 129, 129);
-}
-
-.lang_button {
-    color: rgb(129, 129, 129);
-    text-decoration: none;
-}
-
-.lang_button.active {
-    color: rgb(255, 255, 255);
-}
-
-/* постер */
-.cover {
-    position: relative;
-    width: 100%;
-    display: inline-block;
-    overflow: hidden;
-}
-
-.covermain {
-    display: block;
-    width: 100%;
-    height: auto;
-    z-index: 1;
-}
-
-/* Лампы и наложение постера */
-.headcover,
-.lights1,
-.lights2,
-.lights3,
-.lights4,
-.lights5 {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 3;
-}
-
-.lights1,
-.lights5 {
-    animation: 3s blinkfirst infinite;
-}
-
-.lights2 {
-    animation: 3s blinksecond infinite;
-}
-
-.lights3 {
-    animation: 3s blinkfirstfast infinite;
-}
-
-.lights4 {
-    animation: 3s blinksecondfast infinite;
-}
-
-@keyframes blinkfirst {
-
-    0%,
-    35%,
-    100% {
-        opacity: 0;
+    .logo img {
+        position: relative;
+        display: block;
+        height: 10.5vh;
+        width: auto;
     }
 
-    10% {
-        opacity: 1;
-    }
-}
-
-@keyframes blinkfirstfast {
-
-    0%,
-    50%,
-    87%,
-    100% {
-        opacity: 0;
+    .headbuttons {
+        position: relative;
+        display: flex;
+        gap: 35px;
+        padding: 13px 7.5px 0 0;
+        height: 5vh;
     }
 
-    67% {
-        opacity: 1;
-    }
-}
-
-@keyframes blinksecond {
-
-    20%,
-    80% {
-        opacity: 0;
-    }
-
-    90% {
-        opacity: 1;
-    }
-}
-
-@keyframes blinksecondfast {
-
-    0%,
-    40%,
-    75%,
-    100% {
-        opacity: 0;
+    .language_switcher ul {
+        position: relative;
+        list-style: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 1.1vh;
+        color: rgb(129, 129, 129);
     }
 
-    50% {
-        opacity: 1;
-    }
-}
-
-/* Надпись ghost in the shell */
-.title {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -63%);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.title img {
-    position: relative;
-    width: 63.3%;
-    margin-bottom: 26.5%;
-}
-
-.ghost {
-    position: relative;
-    left: -29.5%;
-}
-
-.inthe {
-    position: relative;
-    right: -59%;
-}
-
-.shell {
-    position: relative;
-    left: -14%;
-}
-
-.minititle {
-    position: absolute;
-    top: 69.2%;
-    left: 74.5%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    width: 16%;
-}
-
-.minititle img {
-    position: relative;
-}
-
-.worldof {
-    position: relative;
-    margin-bottom: 25%;
-}
-
-.shirow {
-    position: relative;
-    margin-bottom: 13%;
-}
-
-/* Дым */
-.smogs {
-    position: absolute;
-    z-index: 4;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-}
-
-.smog1,
-.smog2,
-.smog3,
-.smog4 {
-    position: absolute;
-    height: auto;
-}
-
-.smog1 {
-    bottom: -2%;
-    left: -29%;
-    width: 73%;
-    transform: rotate(42deg);
-    animation: 7s smoganim infinite;
-}
-
-.smog2 {
-    bottom: 35%;
-    left: -10.5%;
-    width: 50%;
-    animation: 5s smoganim2 infinite;
-}
-
-.smog3 {
-    top: 38%;
-    left: 20%;
-    width: 120%;
-    animation: 10s smoganim3 infinite;
-}
-
-.smog4 {
-    top: 53%;
-    left: 13%;
-    width: 120%;
-    animation: 8s smoganim2 infinite;
-}
-
-@keyframes smoganim {
-
-    0%,
-    100% {
-        opacity: 0.5;
+    .lang_button {
+        color: rgb(129, 129, 129);
+        text-decoration: none;
     }
 
-    50% {
-        opacity: 1;
-    }
-}
-
-@keyframes smoganim2 {
-
-    0%,
-    100% {
-        opacity: 0.1;
+    .lang_button.active {
+        color: rgb(255, 255, 255);
     }
 
-    50% {
-        opacity: 0.35;
-    }
-}
-
-@keyframes smoganim3 {
-
-    0%,
-    100% {
-        opacity: 0.15;
-    }
-
-    50% {
-        opacity: 0.35;
-    }
 }
 
 /* общий контейнер для всех разделов */
 .container {
     position: relative;
     width: 100%;
-    max-width: 1270px;
+    max-width: 65%;
+    min-width: 100vh;
     margin: 0 auto;
     padding: 0 27px;
 }
-
 
 
 /* все разделы */
@@ -317,7 +86,9 @@ body {
 .features,
 .links,
 .series,
-.gallery {
+.gallery,
+.introducion,
+.MMA {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -326,217 +97,54 @@ body {
 
 
 
-/* карусель */
-.headofcarusel {
-    display: flex;
-    justify-content: space-between;
-    margin-right: 40px;
-}
-
-/* заголовок карусели */
-.htitle {
-    position: relative;
-    color: white;
-}
-
-.htitle h2 {
-    font-family: "Syncopate", sans-serif;
-    font-size: 24pt;
-    font-weight: 500;
-    letter-spacing: -0.1px;
-}
-
-/* кнопки карусели */
-.caruselbuttons {
-    display: flex;
-    align-items: center;
-    gap: 70px;
-    flex-shrink: 0;
-    color: white;
-}
-
-.caruselscrollbuttons ul {
-    font-size: 0;
-    display: flex;
-    list-style: none;
-    gap: 45px;
-}
-
-.caruselscrollbuttons img {
-    width: 50%;
-    height: auto;
-}
-
-.caruselcategories {
-    display: flex;
-}
-
-.caruselcategories img {
-    width: 55%;
-    transform: translateY(4px);
-}
-
-.caruselall {
-    text-transform: uppercase;
-    font-size: 8pt;
-    font-weight: 700;
-    writing-mode: vertical-lr;
-    transform: translateX(-10px);
-    letter-spacing: 2px;
-}
-
-/* лента карусели */
-.caruselfeed {
-    padding-top: 10px;
-    display: flex;
-    justify-content: flex-start;
-    gap: 40px;
-    overflow-x: visible;
-}
-
-.card {
-    margin: 0;
-    flex-shrink: 0;
-    width: 270px;
-}
-
-/* Декоративные рамки карточек карусели*/
-.cardframe,
-.cardframein {
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
-}
-
-.cardframe {
-    position: relative;
-    background-color: #666;
-    padding: 1px;
-}
-
-.cardframein {
-    background-color: rgb(17, 17, 17);
-    padding: 5px;
-}
-
-.cardframein img {
-    display: block;
-    width: 100%;
-    height: 145.8px;
-    object-fit: cover;
-    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
-}
-
-.squaretopright,
-.squaretopleft,
-.squarebottom {
-    position: absolute;
-    width: 5px;
-    height: 5px;
-}
-
-.squaretopright {
-    border-top: 1px solid rgb(174, 174, 174);
-    border-right: 1px solid rgb(174, 174, 174);
-    top: 0;
-    right: 0;
-}
-
-.squaretopleft {
-    border-top: 1px solid rgb(174, 174, 174);
-    border-left: 1px solid rgb(174, 174, 174);
-    top: 0;
-    left: 0;
-}
-
-.squarebottom {
-    border-bottom: 1px solid rgb(174, 174, 174);
-    border-left: 1px solid rgb(174, 174, 174);
-    bottom: 0;
-    left: 0;
-}
-
-.cardtopcaption {
-    display: flex;
-    justify-content: space-between;
-    color: #888;
-    font-size: 9px;
-    margin: 15px 0px;
-}
-
-.cardcaption {
-    color: white;
-    font-size: 11px;
-    line-height: 1.7;
-    letter-spacing: 1px;
-}
-
-
-/* полоса прокрутки карусели */
-.progressbar {
-    height: 10px;
-    margin-top: 70px;
-}
-
-.progressone,
-.progresstwo {
-    stroke-width: 2.4;
-}
-
-.progressone {
-    stroke: #666;
-}
-
-.progresstwo {
-    stroke: white;
-}
-
-
-
 /* раздел серий */
-.seriesrow {
-    margin: 100px 0px;
-    display: grid;
-    gap: 43px;
-}
+.series {
+    .seriesrow {
+        margin: 100px 0px;
+        display: grid;
+        gap: 43px;
+    }
 
-.oneofseries {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+    .oneofseries {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
-.oneofseries img {
-    width: 40%;
-    position: absolute;
-    transform: translate(560px, -30px);
-    z-index: 1;
-}
+    .oneofseries img {
+        width: 40%;
+        position: absolute;
+        transform: translate(560px, -30px);
+        z-index: 1;
+    }
 
-.textoneofseries {
-    padding: 0;
-    color: white;
-    z-index: 2;
-}
+    .textoneofseries {
+        padding: 0;
+        color: white;
+        z-index: 2;
+    }
 
-.textoneofseries h3 {
-    margin: 0;
-    font-family: "Syncopate", sans-serif;
-    font-weight: lighter;
-    font-size: 48pt;
-    letter-spacing: -2px;
-}
+    .textoneofseries h3 {
+        margin: 0;
+        font-family: "Syncopate", sans-serif;
+        font-weight: lighter;
+        font-size: 48pt;
+        letter-spacing: -2px;
+    }
 
-.textoneofseries h4 {
-    margin: 0;
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 12px;
-    letter-spacing: 1px;
-    padding: 20px 0px 0px 70px;
-}
+    .textoneofseries h4 {
+        margin: 0;
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        padding: 20px 0px 0px 70px;
+    }
 
-.decoratebar {
-    stroke-width: 0.5;
-    z-index: 3;
-    stroke: #666;
+    .decoratebar {
+        stroke-width: 0.5;
+        z-index: 3;
+        stroke: #666;
+    }
 }
 
 /* раздел ссылок */
@@ -550,103 +158,61 @@ body {
     width: 100%;
 }
 
-/* раздел галереи */
-.videochoose {
-    display: flex;
-    padding-top: 35px;
+/* раздел о MMA */
+.MMA {
+    margin: 125px 0px 70px 0px;
+
+    .mmatext p {
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: 16px;
+        letter-spacing: 1px;
+        color: white;
+        margin-top: 90px;
+    }
+
+    .mmaimg {
+        margin: 135px 0px 0px 0px;
+    }
 }
 
-.video {
-    flex: 1.25;
-    display: block;
-}
+/* раздел intruducion*/
+.introducion {
+    .introfolders {
+        padding-top: 10px;
+        display: flex;
+        justify-content: flex-start;
+        gap: 40px;
+        overflow-x: visible;
+    }
 
-.video iframe {
-    width: 100%;
-    height: 350px;
-    aspect-ratio: 16 / 9;
-}
+    .introcard {
+        margin: 0;
+        flex-shrink: 0;
+        width: 150px;
+    }
 
-.choose {
-    flex: 1;
-    overflow: hidden;
-    position: relative;
-    margin-left: 40px;
-}
+    .introcard img {
+        width: 240px;
+        height: auto;
+        display: block;
+    }
 
-.linechoose {
-    width: 100%;
-    height: 2px;
-    display: block;
-}
+    .introcardcaption {
+        font-size: 11.5px;
+        line-height: 1.7;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        padding-top: 19px;
 
-.chooseline {
-    width: 600px;
-    height: 2px;
-    stroke: rgb(129, 129, 129);
-    stroke-width: 1.5;
-}
+    }
 
-.choosetopcaption {
-    display: flex;
-    justify-content: space-between;
-    color: #888;
-    font-size: 9px;
-}
+    .introcardcaption small {
+        color: #888;
+    }
 
-.choosecaption {
-    font-size: 11px;
-    font-weight: normal;
-    line-height: 1.7;
-    letter-spacing: 1px;
-    margin: 10px 0 0 50px;
-    color: white;
-    padding: 5px 0px 10px 0;
-}
-
-.lineblack {
-    position: absolute;
-    width: 40px;
-    height: 100%;
-    top: 0;
-    left: 35px;
-    z-index: 10;
-}
-
-.lineblack svg {
-    width: 100%;
-    height: 100%;
-    display: block;
-}
-
-.blackline {
-    stroke: rgb(17, 17, 17);
-    stroke-width: 25;
-}
-
-.arrow {
-    position: absolute;
-    z-index: 10;
-}
-
-.arrowsvg {
-    stroke-width: 1.7px;
-    stroke: rgb(174, 174, 174);
-    fill: none;
-}
-
-.mmatext {
-    margin-top: 240px;
-}
-
-.mmatext p {
-    font-family: "Noto Sans JP", sans-serif;
-    font-size: 16px;
-    letter-spacing: 1px;
-    color: white;
-    margin-top: 100px;
-}
-
-.mmaimg {
-    margin: 100px 0px;
+    .introcardcaption strong {
+        display: block;
+        color: white;
+        padding-top: 11px;
+    }
 }

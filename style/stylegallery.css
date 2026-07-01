@@ -1,0 +1,90 @@
+.videochoose {
+    display: flex;
+    padding-top: 35px;
+}
+
+.video {
+    flex: 1.25;
+    display: block;
+}
+
+.video iframe {
+    width: 100%;
+    height: 365px;
+    aspect-ratio: 16 / 9;
+    background-color: rgb(7, 7, 7);
+}
+
+.choose {
+    flex: 1;
+    overflow: hidden;
+    position: relative;
+    margin-left: 40px;
+}
+
+.linechoose {
+    width: 100%;
+    height: 5px;
+    display: block;
+}
+
+.chooseline {
+    width: 600px;
+    height: 5px;
+    stroke: rgb(129, 129, 129);
+    stroke-width: 1px;
+}
+
+.choosetopcaption {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 10px;
+}
+
+.choosecaption {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 1.7;
+    letter-spacing: 0.7px;
+    color: white;
+    padding: 14px 0px 9px 42px;
+}
+
+.lineblack {
+    position: absolute;
+    width: 40px;
+    height: 100%;
+    top: 0;
+    left: 32px;
+    z-index: 10;
+}
+
+.lineblack svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.blackline {
+    stroke: rgb(17, 17, 17);
+    stroke-width: 17;
+}
+
+.arrow {
+    position: absolute;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+}
+
+.arrow svg {
+    width: 40px;
+    height: 40px;
+}
+
+.arrowsvg {
+    stroke-width: 1.7px;
+    stroke: rgb(174, 174, 174);
+    fill: none;
+}

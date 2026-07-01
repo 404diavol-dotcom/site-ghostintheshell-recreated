@@ -1,0 +1,161 @@
+.headofcarusel {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+/* заголовок карусели */
+.htitle {
+    position: relative;
+    color: white;
+}
+
+.htitle h2 {
+    font-family: "Syncopate", sans-serif;
+    font-size: 24pt;
+    font-weight: 500;
+    letter-spacing: -0.1px;
+}
+
+/* кнопки карусели */
+.caruselbuttons {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    flex-shrink: 0;
+    color: white;
+}
+
+.caruselscrollbuttons ul {
+    font-size: 0;
+    display: flex;
+    list-style: none;
+    gap: 45px;
+}
+
+.caruselscrollbuttons img {
+    width: 50%;
+    height: auto;
+}
+
+.caruselcategories {
+    display: flex;
+}
+
+.caruselcategories img {
+    width: 55%;
+    transform: translateY(4px);
+}
+
+.caruselall {
+    text-transform: uppercase;
+    font-size: 8pt;
+    font-weight: 700;
+    writing-mode: vertical-lr;
+    transform: translateX(-10px);
+    letter-spacing: 2px;
+}
+
+/* лента карусели */
+.caruselfeed {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    overflow-x: visible;
+}
+
+.card {
+    margin: 0;
+    flex-shrink: 0;
+    width: 270px;
+}
+
+/* Декоративные рамки карточек карусели*/
+.cardframe,
+.cardframein {
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
+}
+
+.cardframe {
+    position: relative;
+    background-color: #666;
+    padding: 1px;
+}
+
+.cardframein {
+    background-color: rgb(17, 17, 17);
+    padding: 5px;
+}
+
+.cardframein img {
+    display: block;
+    width: 100%;
+    height: 145.8px;
+    object-fit: cover;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 29px), calc(100% - 29px) 100%, 0 100%);
+}
+
+.squaretopright,
+.squaretopleft,
+.squarebottom {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+}
+
+.squaretopright {
+    border-top: 1px solid rgb(174, 174, 174);
+    border-right: 1px solid rgb(174, 174, 174);
+    top: 0;
+    right: 0;
+}
+
+.squaretopleft {
+    border-top: 1px solid rgb(174, 174, 174);
+    border-left: 1px solid rgb(174, 174, 174);
+    top: 0;
+    left: 0;
+}
+
+.squarebottom {
+    border-bottom: 1px solid rgb(174, 174, 174);
+    border-left: 1px solid rgb(174, 174, 174);
+    bottom: 0;
+    left: 0;
+}
+
+.cardtopcaption {
+    display: flex;
+    justify-content: space-between;
+    color: #888;
+    font-size: 9px;
+    margin: 15px 0px;
+}
+
+.cardcaption {
+    color: white;
+    font-size: 11px;
+    line-height: 1.7;
+    letter-spacing: 1px;
+}
+
+
+/* полоса прокрутки карусели */
+.progressbar {
+    height: 10px;
+    margin-top: 70px;
+}
+
+.progressone,
+.progresstwo {
+    stroke-width: 2.4;
+}
+
+.progressone {
+    stroke: #666;
+}
+
+.progresstwo {
+    stroke: white;
+}
