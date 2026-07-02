@@ -16,7 +16,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     background-color: rgb(17, 17, 17);
-    min-height: 3000px;
+    min-height: 100vh;
     overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 35.5px;
+    padding: 4vh;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -35,25 +35,22 @@ body {
     .logo img {
         position: relative;
         display: block;
-        height: 10.5vh;
-        width: auto;
+        width: 11%;
     }
 
     .headbuttons {
         position: relative;
         display: flex;
-        gap: 35px;
-        padding: 13px 7.5px 0 0;
-        height: 5vh;
+        gap: 2.5vw;
+        height: auto;
+        margin: 2vh 1vw 0 0;
     }
 
     .language_switcher ul {
         position: relative;
         list-style: none;
-        margin: 0;
-        padding: 5px 0 0 0;
         display: flex;
-        gap: 8px;
+        gap: 0.5vw;
         align-items: center;
         font-size: 1.1vh;
         color: rgb(129, 129, 129);
@@ -179,9 +176,10 @@ body {
 .introducion {
     .introfolders {
         padding-top: 10px;
+        margin-bottom: -35px;
         display: flex;
         justify-content: flex-start;
-        gap: 40px;
+        gap: 160px;
         overflow-x: visible;
     }
 
